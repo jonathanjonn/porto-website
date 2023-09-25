@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 1% 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+    background-color: #66545e;
+}
+
+body{
+    background:#a39193;
+    width: auto;
+    height: auto;
+}
+
+.logo{
+    font-size: 200%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: 	#f6e0b5;
+}
+
+.logo a:hover{
+    color: 	#f6e0b5;
+}
+
+.navBar{
+    display: flex;
+    list-style-type: none;
+}
+
+.navBar a{
+    font-size: 125%;
+    font-weight: 500;
+    margin: 0 25px;
+    color: 	#f6e0b5;
+    transition: all .45s ease;
+}
+
+.navBar a:hover{
+    color: beige;
+}
+section{
+    padding: 10% 15% 10%;
+    width: auto;
+    height: auto;
+}
+
+.home{
+    position: relative;
+    height: auto;
+    width: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,2fr);
+    justify-content: flex-start;
+    gap: 1.5 rem;
+}
+
+.text{
+    margin-bottom: 20px;
+
+
+}
+
+.one{
+    display: inline-block;
+    margin-top: 20%;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background:#aa6f73;
+}
+
+.two{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hometxt{
+    font-weight: 700;
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.hometxt h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    list-style: 1.1;
+    margin: 0 0 8px;
+
+}
+
+.hometxt h3{
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hometxt p{
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-size: 1.5 rem;
+}
+
+.homeimg img{
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    transition: 1s ease;
+    gap: 3 rem;
+    display: grid;
+}
+
+.homeimg img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #aa6f73;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+    color: black;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+}
+
+header.fix{
+    border-bottom: 1px solid;
+    padding: 12px 15%;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #aa6f73;
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutimg img{
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    transition: 1s ease;
+}
+
+.aboutimg img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.abouttxt h2{
+    line-height: 1;
+
+}
+  
+.abouttxt h4{
+    font-size: 24 px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin:0.5% 0 5%;
+}
+
+.abouttxt p{
+    line-height: 1.8;
+    margin-bottom: 4 rem;
+}
+
+.btn-abt{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #a39193;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+    color: black;
+    margin-top: 35px;
+}
+
+.btn-abt:hover{
+    transform: scale(0.9);
+}
+
+.service{
+    background: #eea990;
+    max-width: 100%;
+    height: auto;
+}
+
+.servicetxt{
+    text-align: center;
+}
+
+.servicetxt h2{
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.service p {
+    line-height: 100%;
+    font-size: 85%;
+}
+
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5 rem;
+}
+
+.service-icon{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.box{
+    background: #f6e0b5;
+    padding: 7% 10%;
+    border-radius: 10%;
+    max-width: 400px;
+    height: 400px;
+    transition: all .45s ease;
+}
+
+.box h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box p{
+    display: inline-block;
+    font-size: 0.9 rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.box:hover{
+    transform: translateY(-8px);
+}
+.btn-service{
+    text-align: center;
+    margin-top: 55px;
+}
+
+.porto{
+    height: auto;
+    width: 100%;
+}
+
+
+
+.porto-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items: center;
+    gap: 8rem;
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.row-t img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    max-width: 300px;
+    max-height: 500px;
+    height: auto;
+    transition: 1s ease;
+}
+
+.row-r img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    max-width: 500px;
+    max-height: 300px;
+    height: auto;
+    transition: 1s ease;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),#eea990);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    font-size: 1 rem;
+    line-height: 1.8;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+
+.contact{
+    height: 100%;
+    width: 100%;
+    background: #f6e0b5;
+}
+
+.sosmed{
+   text-align: center;
+   gap: 1.5rem;
+   display: grid;
+   align-items: center;
+   gap: 2.5rem;
+}
+
